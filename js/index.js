@@ -30,6 +30,8 @@ const {
 function submitToAPI(e) {
     e.preventDefault();
 
+    ReactDOM.render(<span className=""></span>, document.querySelector('#span-message'));
+
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
@@ -165,6 +167,9 @@ function LoadingMessage() {
  */
 function SuccessMessage(msg) {
     ReactDOM.render(<span className="success label"> {msg} </span>, document.querySelector('#span-message'));
+    setTimeout(function() {
+        document.getElementById("span-message").innerHTML = "";
+    },5000)
 }
 
 /**
