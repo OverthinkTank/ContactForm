@@ -1,0 +1,9 @@
+.label {
+    color: white;
+    padding: 8px;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+  
+  .success {background-color: #4CAF50;} /* Green */
+  .error {background-color: #f44336;} /* Red */
